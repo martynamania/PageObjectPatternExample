@@ -2,6 +2,7 @@
 target/
 *.exe
 .idea/
+out/
 
 # Compiled class file
 *.class
