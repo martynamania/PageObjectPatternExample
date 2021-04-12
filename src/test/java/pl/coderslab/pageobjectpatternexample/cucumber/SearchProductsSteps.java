@@ -26,8 +26,6 @@ public class SearchProductsSteps {
     @When("^Search catalog for (.*)$")
     public void searchCatalogFor(String searchQuery) {
         this.myStorePage.searchCatalog(searchQuery);
-        List<String> displayedProductsNames = this.myStorePage.getDisplayedProductsNames();
-        assertNotEquals(0, displayedProductsNames.size());
     }
 
     @Then("^At least one product found$")
